@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: black;
+    color: wheat;
+}
+
+/* Header */
+header {
+    background: brown;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navbar */
+nav {
+    margin-top: 15px;
+}
+
+/* Hide checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.menu a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: green;
+}
+
+/* Hamburger */
+.menu-icon {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: black;
+}
+
+/* Profile image */
+header img {
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+/* Sections */
+section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: red;
+}
+
+/* Projects */
+.project {
+    background: red;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    color: white;
+}
+
+/* Skills */
+ul {
+    margin-left: 20px;
+}
+
+/* Resume button */
+.resume-btn {
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    padding: 12px 25px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.resume-btn:hover {
+    background-color: darkgreen;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: red;
+    color: white;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        background: brown;
+        margin-top: 10px;
+    }
+
+    .menu li {
+        padding: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #menu-toggle:checked + .menu-icon + .menu {
+        display: flex;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Portfolio</h1>
+
+    <!-- Mobile Menu -->
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">☰</label>
+
+    <ul class="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <img src="WhatsApp Image 2026-01-02 at 7.39.50 PM.jpeg" alt="Profile">
+    <h2>SOMU SAITEJAREDDY</h2>
+    <p>WEB DEVELOPER</p>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        Hello! I am Somu Saitejareddy, a passionate web developer learning HTML and CSS.
+        I enjoy creating clean and responsive websites.
+        I also work with Java, MySQL, and JavaScript.
+    </p>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+        <h3>Project 1</h3>
+        <p>Simple landing page using HTML & CSS.</p>
+    </div>
+    <div class="project">
+        <h3>Project 2</h3>
+        <p>Personal portfolio website.</p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Basic JavaScript</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: somusaitejareddy77377@email.com</p>
+</section>
+
+<a href="SAP_BTP_CAP_Integration_Resume.docx" download class="resume-btn">
+    Download Resume
+</a>
+
+<footer>
+    <p>© 2026 My Portfolio</p>
+</footer>
+
+</body>
+</html>
